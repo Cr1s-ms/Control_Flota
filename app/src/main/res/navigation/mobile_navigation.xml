@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_conductores">
+
+    <fragment
+        android:id="@+id/nav_conductores"
+        android:name="com.cms_dev.control_flota.ui.conductores.ConductoresFragment"
+        android:label="@string/menu_conductores"
+        tools:layout="@layout/fragment_conductores" />
+
+    <fragment
+        android:id="@+id/nav_vehiculos"
+        android:name="com.cms_dev.control_flota.ui.vehiculos.VehiculosFragment"
+        android:label="@string/menu_vehiculos"
+        tools:layout="@layout/fragment_vehiculos" />
+
+    <fragment
+        android:id="@+id/nav_seguimiento"
+        android:name="com.cms_dev.control_flota.ui.seguimiento.SeguimientoFragment"
+        android:label="@string/menu_seguimineto"
+        tools:layout="@layout/fragment_seguimiento" />
+
+    <fragment
+        android:id="@+id/nav_mantenciones"
+        android:name="com.cms_dev.control_flota.ui.mantenciones.MantencionesFragment"
+        android:label="@string/menu_mantenciones"
+        tools:layout="@layout/fragment_mantenciones" />
+</navigation>

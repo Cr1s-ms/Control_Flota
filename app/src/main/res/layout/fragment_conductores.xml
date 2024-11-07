@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.conductores.ConductoresFragment">
+
+    <!-- Campo para ingresar el nombre del conductor -->
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Conductor" />
+
+    <!-- Campo para ingresar el vehículo -->
+    <EditText
+        android:id="@+id/vehiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonAdd1"
+        android:layout_marginBottom="-45dp"
+        android:ems="10"
+        android:hint="Vehiculo Asignado"
+        android:inputType="text" />
+
+    <!-- Botón para agregar conductor -->
+    <Button
+        android:id="@+id/buttonAdd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTask"
+        android:layout_marginTop="39dp"
+        android:text="Agregar" />
+
+    <!-- Lista de conductores -->
+    <ListView
+        android:id="@+id/listViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:layout_below="@id/buttonAdd1"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1" />
+
+    <!-- Campos para editar conductor y vehículo (ocultos inicialmente) -->
+
+    <!-- Botón para guardar cambios (oculto inicialmente) -->
+
+    <EditText
+        android:id="@+id/editTextEditTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listViewTasks"
+        android:layout_marginTop="111dp"
+        android:hint="Editar Conductor"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edit_vehiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEditTask"
+        android:layout_marginTop="-6dp"
+        android:hint="Editar Vehiculo"
+        android:visibility="gone" />
+
+    <!-- Botón para eliminar conductor (oculto inicialmente) -->
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_vehiculo"
+        android:layout_marginTop="2dp"
+        android:text="Guardar Cambios"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonEdit"
+        android:layout_marginTop="0dp"
+        android:text="Eliminar"
+        android:visibility="gone" />
+</RelativeLayout>
